@@ -1,0 +1,199 @@
+/*#home {*/
+/*    height: 100vh;*/
+/*}*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+:root {
+    --colour-primary: #30415d;
+    --colour-secondary: #8eaebd;
+    --colour-tertiary: #cf6766;
+    --background: linear-gradient(120deg, var(--colour-primary) 40%, var(--colour-secondary) 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    color: #eeeeee;
+}
+
+body {
+    background: var(--background);
+}
+
+
+.nav-link {
+    color: var(--colour-primary);
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.burgerIcon {
+    font-size: 3rem;
+    background-color: var(--colour-secondary);
+    padding: .5rem;
+    border-radius: 1rem;
+}
+
+i {
+    color: var(--colour-tertiary);
+    font-size: 2rem;
+}
+
+.burgerClicked {
+    background-color: var(--colour-tertiary);
+    transition: 1s;
+}
+
+.navbar {
+    transition: .5s;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+h1, h2 , h3 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+h1, h3 {
+    color: var(--colour-tertiary);
+}
+
+span {
+    font-weight: bold;
+    color: var(--colour-tertiary);
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.card {
+    border-radius: 1rem;
+}
+
+.card-img {
+    opacity: 0;
+    border-radius: 1rem;
+}
+
+.card-img-overlay {
+    opacity: 1;
+    color: #ffffff;
+    background-color: var(--colour-tertiary);
+    transition: all .5s ease-in-out;
+    border-radius: 1rem;
+}
+
+#aboutMeImg {
+    border: 3px solid #ffffff;
+}
+
+.icons {
+    font-size: 3rem;
+    color: var(--colour-secondary);
+    transition: .3s ease-out;
+}
+
+.projImage {
+    border: 2px solid #ffffff;
+}
+
+#aboutMeImg {
+    margin-bottom: 2rem;
+}
+
+.cv {
+    transition: .3s ease-out;
+}
+
+@media only screen and (min-width: 1000px) {
+
+    h1, h2 {
+        font-size: 4rem;
+        margin: 1rem;
+    }
+
+     .nav-link {
+        color: var(--colour-tertiary);
+         font-size: 1.2rem;
+        border-radius: 1rem;
+        background-size: 0;
+        background-repeat: no-repeat;
+        transition: .5s;
+    }
+
+    .navbarScroll {
+        background-color: var(--colour-tertiary);
+        transition: .5s ease-in;
+    }
+
+    .navLinkScroll {
+        color: var(--colour-primary);
+        transition: .5s ease-in;
+    }
+
+    .nav-link:active {
+        color: #ffffff;
+    }
+
+    .nav-link:hover {
+        background-size: 100%;
+        background-color: white;
+        color: var(--colour-primary);
+        transition: 1s ease-out;
+    }
+
+    .card-img {
+        opacity: 1;
+    }
+
+    .card-img-overlay {
+        opacity: 0;
+        background: var(--colour-tertiary);
+        transition: all .5s ease-in-out;
+    }
+
+    .card-img-overlay:hover {
+        opacity: 1;
+        transition: all .5s ease-in-out;
+    }
+
+    .icons:hover {
+        color: #ffffff;
+        animation: pulse 1s linear;
+    }
+
+    .cv {
+        transition: .3s ease-out;
+    }
+
+    .cv:hover {
+        transform: scale(1.4);
+        transition: .5s ease-in-out;
+    }
+
+    @keyframes pulse {
+        25% {
+            transform: scale(0.8, 1.3);
+        }
+        50% {
+            transform: scale(1.1, .8);
+        }
+        75% {
+            transform: scale(0.7, 1.1);
+        }
+    }
+}
+
