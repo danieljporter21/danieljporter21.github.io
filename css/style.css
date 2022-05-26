@@ -199,5 +199,10 @@ a {
             transform: scale(0.7, 1.1);
         }
     }
+
+    #aboutMeImg {
+        height: auto;
+        width: 60%;
+    }
 }
 
