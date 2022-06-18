@@ -115,7 +115,7 @@ p {
 }
 
 .email {
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 a {
@@ -194,5 +194,9 @@ a {
     #aboutMeImg {
         height: auto;
         width: 60%;
+    }
+
+    .email {
+        font-size: 1.5rem;
     }
 }
